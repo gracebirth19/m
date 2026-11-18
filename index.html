@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="An interactive fictional mission announcement starring Meira Berlow.">
+<title>MARS CLASS / Meira Berlow</title>
+<link rel="stylesheet" href="./style.css">
+<script src="./story.js" defer></script>
+<script src="./app.js" defer></script>
+</head>
+<body>
+<header class="masthead"><div class="mast-inner">
+  <a href="#x" class="brand" aria-label="Mars Class home"><span class="mission-mark">✦</span><span>MARS CLASS<small>THE ANNOUNCEMENT</small></span></a>
+  <div class="mast-status"><span class="live-dot"></span><span>LIVE SIMULATION</span><span class="mast-separator"></span><time id="clock">14:00 EST</time></div>
+  <button id="settings" class="utility" type="button">⚙ <span>Settings</span></button>
+</div></header>
+<div class="wire"><div class="wire-inner"><span class="wire-badge">BREAKING</span><span>NASA names the inaugural Mars class. Meira Berlow joins the crew.</span><button data-route="press">Read the announcement <span aria-hidden="true">↗</span></button></div></div>
+<div class="layout">
+<aside class="left" aria-label="Navigation">
+  <div class="nav-group"><div class="eyebrow">YOUR APPS</div><nav id="apps"></nav></div>
+  <div class="nav-group" id="section"></div>
+  <div id="account"></div>
+</aside>
+<main id="main" tabindex="-1"></main>
+<aside class="right" id="right" aria-label="Live updates and recommendations"></aside>
+</div>
+<dialog id="dialog"></dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
